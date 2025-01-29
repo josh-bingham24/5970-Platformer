@@ -1,3 +1,9 @@
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 6ED303E2
+/// @DnDArgument : "var" "textiooi"
+textiooi = 0;
+
 /// @DnDAction : YoYo Games.Drawing.Draw_Self
 /// @DnDVersion : 1
 /// @DnDHash : 25925581
@@ -28,16 +34,6 @@ draw_set_valign(fa_middle);
 draw_set_colour($FFFFFFFF & $ffffff);
 var l0ED16B56_0=($FFFFFFFF >> 24);
 draw_set_alpha(l0ED16B56_0 / $ff);
-
-/// @DnDAction : YoYo Games.Drawing.Draw_Value
-/// @DnDVersion : 1
-/// @DnDHash : 10150B10
-/// @DnDComment : This draws the text.
-/// @DnDArgument : "x_relative" "1"
-/// @DnDArgument : "y_relative" "1"
-/// @DnDArgument : "caption" ""
-/// @DnDArgument : "var" "text"
-draw_text(x + 0, y + 0,  + string(text));
 
 /// @DnDAction : YoYo Games.Drawing.Set_Color
 /// @DnDVersion : 1

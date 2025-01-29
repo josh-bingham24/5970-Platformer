@@ -4,8 +4,13 @@
 /// @DnDComment : This checks if the game is NOT paused,$(13_10)in which case we want to pause it.
 /// @DnDArgument : "expr" "paused"
 /// @DnDArgument : "not" "1"
-if(!(paused))
-{
+if(!(paused)){	/// @DnDAction : YoYo Games.Time.Time_Source_Resume
+	/// @DnDVersion : 1
+	/// @DnDHash : 6D404AAA
+	/// @DnDParent : 1291B3B8
+	/// @DnDArgument : "idx" "time_source"
+	time_source_resume(time_source);
+
 	/// @DnDAction : YoYo Games.Common.Function_Call
 	/// @DnDVersion : 1
 	/// @DnDHash : 6AAB7271
@@ -42,15 +47,19 @@ if(!(paused))
 	/// @DnDParent : 1291B3B8
 	/// @DnDArgument : "expr" "true"
 	/// @DnDArgument : "var" "paused"
-	paused = true;
-}
+	paused = true;}
 
 /// @DnDAction : YoYo Games.Common.Else
 /// @DnDVersion : 1
 /// @DnDHash : 44BC3ACD
 /// @DnDComment : Otherwise, if the game is already paused,
-else
-{
+else{	/// @DnDAction : YoYo Games.Time.Time_Source_Pause
+	/// @DnDVersion : 1
+	/// @DnDHash : 3D2544BE
+	/// @DnDParent : 44BC3ACD
+	/// @DnDArgument : "idx" "time_source"
+	time_source_pause(time_source);
+
 	/// @DnDAction : YoYo Games.Common.Function_Call
 	/// @DnDVersion : 1
 	/// @DnDHash : 58481FD5
@@ -74,5 +83,4 @@ else
 	/// @DnDParent : 44BC3ACD
 	/// @DnDArgument : "expr" "false"
 	/// @DnDArgument : "var" "paused"
-	paused = false;
-}
+	paused = false;}
