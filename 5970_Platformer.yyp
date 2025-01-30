@@ -113,6 +113,7 @@
     {"id":{"name":"obj_parallax","path":"objects/obj_parallax/obj_parallax.yy",},},
     {"id":{"name":"obj_pause_menu_background","path":"objects/obj_pause_menu_background/obj_pause_menu_background.yy",},},
     {"id":{"name":"obj_persistent_manager","path":"objects/obj_persistent_manager/obj_persistent_manager.yy",},},
+    {"id":{"name":"obj_placeholder_message_1","path":"objects/obj_placeholder_message_1/obj_placeholder_message_1.yy",},},
     {"id":{"name":"obj_placeholder_message","path":"objects/obj_placeholder_message/obj_placeholder_message.yy",},},
     {"id":{"name":"obj_player_defeat_transition","path":"objects/obj_player_defeat_transition/obj_player_defeat_transition.yy",},},
     {"id":{"name":"obj_player_defeated","path":"objects/obj_player_defeated/obj_player_defeated.yy",},},

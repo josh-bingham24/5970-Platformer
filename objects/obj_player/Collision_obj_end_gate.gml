@@ -6,6 +6,7 @@
 /// @DnDArgument : "ypos_relative" "1"
 /// @DnDArgument : "objectid" "obj_player_end_level"
 /// @DnDArgument : "layer" "layer"
+/// @DnDSaveInfo : "objectid" "obj_player_end_level"
 instance_create_layer(x + 0, y + 0, layer, obj_player_end_level);
 
 /// @DnDAction : YoYo Games.Instances.Destroy_Instance
@@ -13,3 +14,9 @@ instance_create_layer(x + 0, y + 0, layer, obj_player_end_level);
 /// @DnDHash : 397BB688
 /// @DnDComment : This destroys the player instance as it's no longer$(13_10)needed.
 instance_destroy();
+
+/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+/// @DnDVersion : 1
+/// @DnDHash : 376D2963
+/// @DnDApplyTo : {obj_timer}
+with(obj_timer) instance_destroy();

@@ -12,3 +12,10 @@
 paused = false;
 pause_sequence = -1;
 in_cave = false;
+
+/// @DnDAction : YoYo Games.Common.Set_Global
+/// @DnDVersion : 1
+/// @DnDHash : 7E8A2773
+/// @DnDArgument : "value" "false"
+/// @DnDArgument : "var" "paused"
+global.paused = false;
